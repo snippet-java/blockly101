@@ -1,0 +1,35 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="Q;@=1..Duc;BuW!G*1h|">myText</variable>
+  </variables>
+  <block type="variables_set" id="#VJk}f5_1AC`inHME0ed" x="-188" y="-438">
+    <field name="VAR" id="Q;@=1..Duc;BuW!G*1h|" variabletype="">myText</field>
+    <value name="VALUE">
+      <block type="text" id="~2K_?=9ksh:F}ND|N677">
+        <field name="TEXT">Hello</field>
+      </block>
+    </value>
+    <next>
+      <block type="text_append" id="Y4Yx2j~(I4T?Dz1*.;_d">
+        <field name="VAR" id="Q;@=1..Duc;BuW!G*1h|" variabletype="">myText</field>
+        <value name="TEXT">
+          <shadow type="text" id="44,-u|(HQl`-`RUew$9(">
+            <field name="TEXT"> world!</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="text_print" id="aftqkK4f]FFL0qk7h|3j">
+            <value name="TEXT">
+              <shadow type="text" id="[Z:WH_`IULOtgQi.(kx_">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="variables_get" id="ZCRnVkpRO_RWx$QnS^;F">
+                <field name="VAR" id="Q;@=1..Duc;BuW!G*1h|" variabletype="">myText</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
