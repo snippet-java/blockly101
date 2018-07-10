@@ -1,0 +1,41 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="$=~OSTS9=O{s6|2VXboN">open</variable>
+    <variable type="" id="2,ceitQHwJl`]$sIZ*5h">amount</variable>
+  </variables>
+  <block type="variables_set" id="R}9NfyM!b;jXcXab+I*(" x="138" y="38">
+    <field name="VAR" id="$=~OSTS9=O{s6|2VXboN" variabletype="">open</field>
+    <value name="VALUE">
+      <block type="logic_boolean" id="R@Y(2%Jx]WIj6Qaj2zCh">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="wVil]oy~hxJAYwIIUZzH">
+        <field name="VAR" id="2,ceitQHwJl`]$sIZ*5h" variabletype="">amount</field>
+        <value name="VALUE">
+          <block type="math_number" id="j*xB@WSk|i0s1(Q/_zv9">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <next>
+          <block type="text_print" id="v%gKktrDnUF!t;N2XSuF">
+            <value name="TEXT">
+              <shadow type="text" id="umDBz{$zE6cu2y+KLqu`">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="logic_operation" id="B@3ATxYZ0!3,b[QRX@X/">
+                <field name="OP">AND</field>
+                <value name="B">
+                  <block type="logic_compare" id="{Wk:R^b62Nm.+lS;{.rB">
+                    <field name="OP">GT</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
