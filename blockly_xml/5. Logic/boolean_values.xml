@@ -1,0 +1,25 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="si{]ro7=ocC#Y^KYVd;-" x="-38" y="13">
+    <value name="TEXT">
+      <shadow type="text" id="sJdV3/e)Hc6]K1TKHk$;">
+        <field name="TEXT">abc</field>
+      </shadow>
+      <block type="logic_boolean" id="oK{ek/:(8]vZ7k*0VgdO">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="$2eqkRh)5Q!#qc!s7DFR">
+        <value name="TEXT">
+          <shadow type="text" id="sJdV3/e)Hc6]K1TKHk$;">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="logic_boolean" id="Mex{#5_-%gC(`#7_kz}R">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
