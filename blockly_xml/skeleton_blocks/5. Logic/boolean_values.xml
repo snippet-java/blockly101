@@ -1,0 +1,19 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="si{]ro7=ocC#Y^KYVd;-" x="-12" y="113">
+    <value name="TEXT">
+      <shadow type="text" id="sJdV3/e)Hc6]K1TKHk$;">
+        <field name="TEXT">abc</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="text_print" id="$2eqkRh)5Q!#qc!s7DFR">
+        <value name="TEXT">
+          <shadow type="text" id="K~^ol@[$2P[?JO@n7T2Q">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
