@@ -1,75 +1,75 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
-    <variable type="" id="AX|B0oC-fCtecT%qBt~6">num</variable>
+    <variable type="" id="L!n9E[~z9b5+vJX=a;D%">num</variable>
   </variables>
-  <block type="variables_set" id="7Rj%$W-7wmmG_97+$VXa" x="-313" y="-287">
-    <field name="VAR" id="AX|B0oC-fCtecT%qBt~6" variabletype="">num</field>
+  <block type="variables_set" id="ZL3S#z9{!/.Y[x$1:7iG" x="63" y="38">
+    <field name="VAR" id="L!n9E[~z9b5+vJX=a;D%" variabletype="">num</field>
     <value name="VALUE">
-      <block type="text_prompt_ext" id="`I[-+p:X~^4:f}Kd{SEd">
-        <mutation type="TEXT"></mutation>
-        <field name="TYPE">TEXT</field>
+      <block type="text_prompt_ext" id="Fl;WzE$#!r^/r}:FJ_E[">
+        <mutation type="NUMBER"></mutation>
+        <field name="TYPE">NUMBER</field>
         <value name="TEXT">
-          <shadow type="text" id="N_SrH5vU[g(s%0S]_7~L">
+          <shadow type="text" id="u6emc`)@!wnujALPyOw/">
             <field name="TEXT">Enter a number</field>
           </shadow>
         </value>
       </block>
     </value>
     <next>
-      <block type="controls_if" id="xJ^[|OSxR]{`uiWKq_]j">
+      <block type="controls_if" id="vr6llSj?7-1k$kkXRk/J">
         <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="^Pus1;:F0C+dGQ(J,BQe">
+          <block type="logic_compare" id="5|jtG@,KcKW84*L_|@4=">
             <field name="OP">GT</field>
             <value name="A">
-              <block type="variables_get" id="+M+2nIQ7pVDohJ?Sv[dV">
-                <field name="VAR" id="AX|B0oC-fCtecT%qBt~6" variabletype="">num</field>
+              <block type="variables_get" id="xU3f26kf,cOX[|7S_={z">
+                <field name="VAR" id="L!n9E[~z9b5+vJX=a;D%" variabletype="">num</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="JQFXq//GbYjNL;1%CN4~">
+              <block type="math_number" id="}4h2C6V|l^P;EEvAztKJ">
                 <field name="NUM">0</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="text_print" id=":Bs(YK{6{luUm;bC/)AL">
+          <block type="text_print" id="N?Jm6JNuQ2F-iVd?N{5N">
             <value name="TEXT">
-              <shadow type="text" id="39*ZHIk4BuWHIe[E-kM^">
-                <field name="TEXT"> This number is positive</field>
+              <shadow type="text" id="4HYT}GQ%/]7|m$|!GJko">
+                <field name="TEXT">This number is positive</field>
               </shadow>
             </value>
           </block>
         </statement>
         <value name="IF1">
-          <block type="logic_compare" id="tQR}_vK*JTPtk1-2,G^y">
+          <block type="logic_compare" id=";Nz)+X@gNb?WdJHb~uNh">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="variables_get" id="/Zye=(DjaTVR84gOP-L+">
-                <field name="VAR" id="AX|B0oC-fCtecT%qBt~6" variabletype="">num</field>
+              <block type="variables_get" id="TKtopy:Mz?!L(y6jlF)|">
+                <field name="VAR" id="L!n9E[~z9b5+vJX=a;D%" variabletype="">num</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="0GU^9),BI8lD:Y-HygAl">
+              <block type="math_number" id="I_()ji+gfwGirtVQ0+)p">
                 <field name="NUM">0</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO1">
-          <block type="text_print" id="Jhd~kiC#1EFo00CFBtWn">
+          <block type="text_print" id="[1$MU^Dj[UI~?CZc:Er$">
             <value name="TEXT">
-              <shadow type="text" id="cok03F5j4@Agt:7L6Af*">
+              <shadow type="text" id="gz]GF@ud/QRlv{tj#)A_">
                 <field name="TEXT">This number is negative</field>
               </shadow>
             </value>
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="text_print" id=":WN3!aM/d-s*~H{M.Qmc">
+          <block type="text_print" id="{kT85Y=k}K([#4|R%;$b">
             <value name="TEXT">
-              <shadow type="text" id="}p6.L5]d[E=R#yVzY!SB">
+              <shadow type="text" id="DCL;`E3n;XG|d7:g+(L;">
                 <field name="TEXT">This number is 0</field>
               </shadow>
             </value>
