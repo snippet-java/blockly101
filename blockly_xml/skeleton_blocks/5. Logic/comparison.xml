@@ -1,0 +1,83 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="!1])N6N]g}%9O;y-+[#c" x="413" y="62">
+    <value name="TEXT">
+      <shadow type="text" id="?A]4GHq5q)YKe+DmRQ]8">
+        <field name="TEXT">abc</field>
+      </shadow>
+      <block type="logic_compare" id="`N2?P1UCU5;SdDu1x7OS">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="math_number" id="|.pW?Ob)%1xktRWp+62X">
+            <field name="NUM">6</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="BrJ}%tj*7Xt)v$RTC2|,">
+            <field name="NUM">8</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="gfV6:s$;2x;32Z{V:7%5">
+        <value name="TEXT">
+          <shadow type="text" id="?A]4GHq5q)YKe+DmRQ]8">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="logic_compare" id="u}dWi@Xy_81*(l_.Hi[V">
+            <field name="OP">EQ</field>
+          </block>
+        </value>
+        <next>
+          <block type="text_print" id="xc;Z9A#ju3Bh50qw5eeG">
+            <value name="TEXT">
+              <shadow type="text" id="?A]4GHq5q)YKe+DmRQ]8">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="logic_compare" id="|_j2[URP*/x2|=b}UU[2">
+                <field name="OP">EQ</field>
+              </block>
+            </value>
+            <next>
+              <block type="text_print" id="!s-XmQDCIpEoU3^R|T:{">
+                <value name="TEXT">
+                  <shadow type="text" id="?A]4GHq5q)YKe+DmRQ]8">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="logic_compare" id="t)Mzk=Ozc9vJI9r=J1@|">
+                    <field name="OP">EQ</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="text_print" id="W+b?-B,i(_ONkem54[M8">
+                    <value name="TEXT">
+                      <shadow type="text" id="?A]4GHq5q)YKe+DmRQ]8">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="logic_compare" id="T=wy0rSl8:Na}2@DA=Kz">
+                        <field name="OP">EQ</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="text_print" id="BBB1y^(WALw7R{62bu;9">
+                        <value name="TEXT">
+                          <shadow type="text" id="?A]4GHq5q)YKe+DmRQ]8">
+                            <field name="TEXT">abc</field>
+                          </shadow>
+                          <block type="logic_compare" id="I|dnT6`yHw8^y?jwG.|[">
+                            <field name="OP">EQ</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
