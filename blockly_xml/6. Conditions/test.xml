@@ -1,0 +1,72 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="C1e_Wx8;l}IngEJJ/A)p">num1</variable>
+    <variable type="" id="m+skh`:;[gBKw12OZ/=U">num2</variable>
+  </variables>
+  <block type="variables_set" id="a.3~6TIPo)PhO;^m%vD^" x="-163" y="13">
+    <field name="VAR" id="C1e_Wx8;l}IngEJJ/A)p" variabletype="">num1</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id="NT9j5pXXew_o=`{U+Re!">
+        <mutation type="NUMBER"></mutation>
+        <field name="TYPE">NUMBER</field>
+        <value name="TEXT">
+          <shadow type="text" id="CT3[BYd}gta;7W%b2OAo">
+            <field name="TEXT">enter number 1</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="^7KSZ6R`jEAptw5rtE;b">
+        <field name="VAR" id="m+skh`:;[gBKw12OZ/=U" variabletype="">num2</field>
+        <value name="VALUE">
+          <block type="text_prompt_ext" id="IT*/|?0v5}`Cl_Ecf.;L">
+            <mutation type="NUMBER"></mutation>
+            <field name="TYPE">NUMBER</field>
+            <value name="TEXT">
+              <shadow type="text" id=")oGa+RDf6p)B!U!d:C-:">
+                <field name="TEXT">enter number 2</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="text_print" id="Oo3a!6sp`wvN?]hw3+Lf">
+            <value name="TEXT">
+              <shadow type="text" id="{SqM^%E/l$5B-0zyM=(i">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="logic_ternary" id="@iz]SjH;H3jlFep*o)GR">
+                <value name="IF">
+                  <block type="logic_compare" id="tU1hmL[vWEN?oF*V8?e{">
+                    <field name="OP">GT</field>
+                    <value name="A">
+                      <block type="variables_get" id="M2F%Yv{Q2^B@6HeevXU2">
+                        <field name="VAR" id="C1e_Wx8;l}IngEJJ/A)p" variabletype="">num1</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="variables_get" id="6YVIL3C{qV2_vc(As0)v">
+                        <field name="VAR" id="m+skh`:;[gBKw12OZ/=U" variabletype="">num2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="THEN">
+                  <block type="variables_get" id="#m.(qrWU;,+:4kmynYyu">
+                    <field name="VAR" id="C1e_Wx8;l}IngEJJ/A)p" variabletype="">num1</field>
+                  </block>
+                </value>
+                <value name="ELSE">
+                  <block type="variables_get" id="Y=RNmOB!fvr:gHkOOQf[">
+                    <field name="VAR" id="m+skh`:;[gBKw12OZ/=U" variabletype="">num2</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
