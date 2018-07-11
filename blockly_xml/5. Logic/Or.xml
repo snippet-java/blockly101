@@ -1,0 +1,46 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="H%uvH!p=h|?a3i4D:4GU">water</variable>
+    <variable type="" id=")jq}kR8YxxYEnj.EjZ`G">juice</variable>
+  </variables>
+  <block type="variables_set" id="U(Edaf^r1C[CA0jj(:zq" x="113" y="38">
+    <field name="VAR" id="H%uvH!p=h|?a3i4D:4GU" variabletype="">water</field>
+    <value name="VALUE">
+      <block type="logic_boolean" id="_x{tZ{yFa3f0NO%Wn;WA">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="DiC-c|J.Bs2zcOMgg2F`">
+        <field name="VAR" id=")jq}kR8YxxYEnj.EjZ`G" variabletype="">juice</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="Yq6sBUaCdAI7F+AuWl,e">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="text_print" id="LKsy~Ay9l8yd)*1gVsNe">
+            <value name="TEXT">
+              <shadow type="text" id="U^pe99^KDIF!PRwM2(Hm">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="logic_operation" id="`z+W8X:NY}ta_u0{!8e:">
+                <field name="OP">OR</field>
+                <value name="A">
+                  <block type="variables_get" id="9OP[n~@x/z1OwFhwBhuo">
+                    <field name="VAR" id="H%uvH!p=h|?a3i4D:4GU" variabletype="">water</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="variables_get" id="}+tY!;Gn,;ULkK5L^%]u">
+                    <field name="VAR" id=")jq}kR8YxxYEnj.EjZ`G" variabletype="">juice</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
