@@ -1,0 +1,17 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="text_print" id="^?=+by4Zwy$zt`T9wSEV" x="262" y="62">
+    <value name="TEXT">
+      <shadow type="text" id="x}]C(]DO1^OfeOutEh|Y">
+        <field name="TEXT">abc</field>
+      </shadow>
+      <block type="logic_negate" id="ch9KhwkU5~0.WHN5iUGm">
+        <value name="BOOL">
+          <block type="logic_operation" id="oL#BH=70Afpv8xsm7OCc">
+            <field name="OP">AND</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>
