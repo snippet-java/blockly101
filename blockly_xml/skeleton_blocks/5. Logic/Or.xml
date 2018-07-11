@@ -1,0 +1,26 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="H%uvH!p=h|?a3i4D:4GU">water</variable>
+    <variable type="" id=")jq}kR8YxxYEnj.EjZ`G">juice</variable>
+  </variables>
+  <block type="variables_set" id="U(Edaf^r1C[CA0jj(:zq" x="113" y="38">
+    <field name="VAR" id="H%uvH!p=h|?a3i4D:4GU" variabletype="">water</field>
+    <next>
+      <block type="variables_set" id="DiC-c|J.Bs2zcOMgg2F`">
+        <field name="VAR" id=")jq}kR8YxxYEnj.EjZ`G" variabletype="">juice</field>
+        <next>
+          <block type="text_print" id="LKsy~Ay9l8yd)*1gVsNe">
+            <value name="TEXT">
+              <shadow type="text" id="U^pe99^KDIF!PRwM2(Hm">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="logic_operation" id="`z+W8X:NY}ta_u0{!8e:">
+                <field name="OP">OR</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
