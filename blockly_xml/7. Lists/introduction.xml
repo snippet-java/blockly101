@@ -1,0 +1,50 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="79?E.Kg.2QKSY@0]?p{C">list</variable>
+  </variables>
+  <block type="variables_set" id="xg^BvLNaTEXei{uD=C{m" x="37" y="13">
+    <field name="VAR" id="79?E.Kg.2QKSY@0]?p{C" variabletype="">list</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="QDbl!BfR{*WaBoNHyJhO">
+        <mutation items="5"></mutation>
+        <value name="ADD0">
+          <block type="text" id=".y:=tO8ca%UH(5M[ybVv">
+            <field name="TEXT">Apple x 2</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="Ik.nof!C#H]0v[Pf[j9`">
+            <field name="TEXT"> Orange x 3</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="-QTTgCK6u715a.Ev(TZ=">
+            <field name="TEXT"> Potatoes - 1kg</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="YVvj-l$[;FX8}N^cH,a7">
+            <field name="TEXT"> Beans - 0.5kg</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="pC[#|HN#O0X`Rjuyxbg-">
+            <field name="TEXT"> Milk - 1L</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="]ag|E0ow}g!aH$zFBPru">
+        <value name="TEXT">
+          <shadow type="text" id="8k_pZdw;nK?@kBg}mM-8">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="variables_get" id="x%a?f1+Lw-Jy|EWmDT@C">
+            <field name="VAR" id="79?E.Kg.2QKSY@0]?p{C" variabletype="">list</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
