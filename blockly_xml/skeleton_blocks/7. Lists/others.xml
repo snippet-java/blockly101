@@ -125,14 +125,19 @@
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="variables_set" id="Uil3=e6.4$:@qCJ-hB~D">
+                                      <block type="variables_set" id="{:_QMU~XCgKBKMDzb1GH">
                                         <field name="VAR" id="79?E.Kg.2QKSY@0]?p{C" variabletype="">list</field>
                                         <value name="VALUE">
-                                          <block type="lists_split" id="*KYxfr+aW(RHR^Nuu}bo">
+                                          <block type="lists_split" id="Mr|!#_fmyNUDPL|gN{(.">
                                             <mutation mode="JOIN"></mutation>
                                             <field name="MODE">JOIN</field>
+                                            <value name="INPUT">
+                                              <block type="variables_get" id="~LpoV?!__c%Q_(bNblV.">
+                                                <field name="VAR" id="79?E.Kg.2QKSY@0]?p{C" variabletype="">list</field>
+                                              </block>
+                                            </value>
                                             <value name="DELIM">
-                                              <shadow type="text" id="vHaz1?tNrlj:GV=LJpMh">
+                                              <shadow type="text" id=";SP)MrF3=L?-3lqAbWGl">
                                                 <field name="TEXT">p </field>
                                               </shadow>
                                             </value>
@@ -144,6 +149,9 @@
                                               <shadow type="text" id="GdgBc].0#e)ZucHC8w-]">
                                                 <field name="TEXT"></field>
                                               </shadow>
+                                              <block type="variables_get" id="5Tv,[9BQ?i]^(ptnP=e{">
+                                                <field name="VAR" id="79?E.Kg.2QKSY@0]?p{C" variabletype="">list</field>
+                                              </block>
                                             </value>
                                           </block>
                                         </next>
