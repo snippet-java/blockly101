@@ -177,22 +177,40 @@
       </block>
     </value>
     <next>
-      <block type="procedures_callnoreturn" id="Gi!#TufdBYlT|guKEQVG">
-        <mutation name="isDivisibleBy3">
-          <arg name="x"></arg>
-        </mutation>
+      <block type="text_print" id="0cqh:EEo2DGy{5%0`n,8">
+        <value name="TEXT">
+          <shadow type="text" id="oVPZLW)y2;AflHD1t6is">
+            <field name="TEXT">without return:</field>
+          </shadow>
+        </value>
         <next>
-          <block type="text_print" id="J67;Ee~jK/L[YCmR,g)0">
-            <value name="TEXT">
-              <shadow type="text" id="CHLKCU_,fNmQ@OV`NXo%">
-                <field name="TEXT">abc</field>
-              </shadow>
-              <block type="procedures_callreturn" id="(DIuwPbRGJZ]1/$sC2rL">
-                <mutation name="do something">
-                  <arg name="x"></arg>
-                </mutation>
+          <block type="procedures_callnoreturn" id="Gi!#TufdBYlT|guKEQVG">
+            <mutation name="isDivisibleBy3">
+              <arg name="x"></arg>
+            </mutation>
+            <next>
+              <block type="text_print" id="f_DQ6=W1T/gkd8Rl.?tQ">
+                <value name="TEXT">
+                  <shadow type="text" id="v`Q}i*LQKNdK@olJzMH)">
+                    <field name="TEXT">with return:</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="text_print" id="J67;Ee~jK/L[YCmR,g)0">
+                    <value name="TEXT">
+                      <shadow type="text" id="CHLKCU_,fNmQ@OV`NXo%">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="procedures_callreturn" id="(DIuwPbRGJZ]1/$sC2rL">
+                        <mutation name="do something">
+                          <arg name="x"></arg>
+                        </mutation>
+                      </block>
+                    </value>
+                  </block>
+                </next>
               </block>
-            </value>
+            </next>
           </block>
         </next>
       </block>
