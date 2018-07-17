@@ -342,32 +342,50 @@
       </block>
     </value>
     <next>
-      <block type="procedures_callnoreturn" id="Gi!#TufdBYlT|guKEQVG">
-        <mutation name="isDivisibleBy3">
-          <arg name="x"></arg>
-        </mutation>
-        <value name="ARG0">
-          <block type="variables_get" id="_3F3oYBpvAFmQM*QgBrC">
-            <field name="VAR" id="#gaR3:5D64yP6[E}Oh:u" variabletype="">myList</field>
-          </block>
+      <block type="text_print" id="^z25E@RrL6-c8$8^UH!Q">
+        <value name="TEXT">
+          <shadow type="text" id="mV9pO:579~nqgDy7!^?e">
+            <field name="TEXT">without return:</field>
+          </shadow>
         </value>
         <next>
-          <block type="text_print" id="J67;Ee~jK/L[YCmR,g)0">
-            <value name="TEXT">
-              <shadow type="text" id="CHLKCU_,fNmQ@OV`NXo%">
-                <field name="TEXT">abc</field>
-              </shadow>
-              <block type="procedures_callreturn" id="(DIuwPbRGJZ]1/$sC2rL">
-                <mutation name="do something">
-                  <arg name="x"></arg>
-                </mutation>
-                <value name="ARG0">
-                  <block type="variables_get" id=".95z%dkhVo~e|KS-~r[{">
-                    <field name="VAR" id="#gaR3:5D64yP6[E}Oh:u" variabletype="">myList</field>
-                  </block>
-                </value>
+          <block type="procedures_callnoreturn" id="Gi!#TufdBYlT|guKEQVG">
+            <mutation name="isDivisibleBy3">
+              <arg name="x"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="variables_get" id="_3F3oYBpvAFmQM*QgBrC">
+                <field name="VAR" id="#gaR3:5D64yP6[E}Oh:u" variabletype="">myList</field>
               </block>
             </value>
+            <next>
+              <block type="text_print" id="nZfukm+6m5gr#:gms9}/">
+                <value name="TEXT">
+                  <shadow type="text" id="cS=Vv/(R+RJZkU((F:H$">
+                    <field name="TEXT">with return:</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="text_print" id="J67;Ee~jK/L[YCmR,g)0">
+                    <value name="TEXT">
+                      <shadow type="text" id="CHLKCU_,fNmQ@OV`NXo%">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="procedures_callreturn" id="(DIuwPbRGJZ]1/$sC2rL">
+                        <mutation name="do something">
+                          <arg name="x"></arg>
+                        </mutation>
+                        <value name="ARG0">
+                          <block type="variables_get" id=".95z%dkhVo~e|KS-~r[{">
+                            <field name="VAR" id="#gaR3:5D64yP6[E}Oh:u" variabletype="">myList</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
