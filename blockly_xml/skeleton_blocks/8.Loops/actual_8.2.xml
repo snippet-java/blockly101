@@ -1,0 +1,45 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="la(?UdvLC|%7I+BpiCWF">scanner</variable>
+    <variable type="" id="G*1mnYGo-+c3d6z;fBU[">purchases</variable>
+  </variables>
+  <block type="variables_set" id="XqF69/EF1:ak=+%s5kXE" x="113" y="38">
+    <field name="VAR" id="la(?UdvLC|%7I+BpiCWF" variabletype="">scanner</field>
+    <next>
+      <block type="variables_set" id="~0dQ__u$+kc3C6uc/oS+">
+        <field name="VAR" id="G*1mnYGo-+c3d6z;fBU[" variabletype="">purchases</field>
+        <next>
+          <block type="controls_whileUntil" id="XWLKj(rIyi$*)-kdsmee">
+            <field name="MODE">WHILE</field>
+            <value name="BOOL">
+              <block type="logic_compare" id="KuYWh+YbYuDL*8|~4vct">
+                <field name="OP">NEQ</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="lists_setIndex" id="}:Slf)V~:L/`z^:Kx|y|">
+                <mutation at="true"></mutation>
+                <field name="MODE">INSERT</field>
+                <field name="WHERE">FROM_START</field>
+                <next>
+                  <block type="variables_set" id="A}}6d%Vwtd!Z3G8`nCmF">
+                    <field name="VAR" id="la(?UdvLC|%7I+BpiCWF" variabletype="">scanner</field>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="text_print" id="D4.$@NYe,)0Dzu6HQ[R?">
+                <value name="TEXT">
+                  <shadow type="text" id="s/H.NGbC3D(x%it,izIJ">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
