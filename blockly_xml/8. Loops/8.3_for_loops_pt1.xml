@@ -1,0 +1,54 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="qeMAAwFZJyrXXL5B~]{S">counter</variable>
+  </variables>
+  <block type="variables_set" id="H`er{_3:p!Uq!plf)*kE" x="88" y="13">
+    <field name="VAR" id="qeMAAwFZJyrXXL5B~]{S" variabletype="">counter</field>
+    <value name="VALUE">
+      <block type="math_number" id="}wmt5EqT0k[heG4;;,_s">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_repeat_ext" id="6jqG])1kS`78ZCXhnO%a">
+        <value name="TIMES">
+          <shadow type="math_number" id="}[{pATSj^l,A{(4R4gP`">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="text_print" id="3,zhTB,/A0#!r{BkM_v6">
+            <value name="TEXT">
+              <shadow type="text" id="B%jKdY=Wy^)zwV3J3-e*">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="text_join" id="agyiQk=xto!0@=pc4?{h">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="S}KrGZKSipKUHR!!]$Eo">
+                    <field name="TEXT">Line </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="variables_get" id="lbbXCoD!KQ{=P3[sj0c|">
+                    <field name="VAR" id="qeMAAwFZJyrXXL5B~]{S" variabletype="">counter</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="math_change" id="2U5aV7Vc!!%z}=y*2!i/">
+                <field name="VAR" id="qeMAAwFZJyrXXL5B~]{S" variabletype="">counter</field>
+                <value name="DELTA">
+                  <shadow type="math_number" id="]:mEiP{ukf?+bk^{{z{*">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
