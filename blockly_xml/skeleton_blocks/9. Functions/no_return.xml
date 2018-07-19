@@ -3,59 +3,42 @@
     <variable type="" id="/Km8+Chs}2YesObTHYbl">x</variable>
     <variable type="" id="S[4hE4@K!M:;HM0,EL:w">y</variable>
     <variable type="" id="|t1WA!N#gupK$]|e%5tK">text1</variable>
-    <variable type="" id="[Y1iDPMal~evR-6QaNPE">occurrence</variable>
     <variable type="" id="Q._ZYh2bgjS9(klX2j2V">text2</variable>
-    <variable type="" id=",-6GMg3J=V,Hs7[i*}{}">isSameLength</variable>
   </variables>
   <block type="procedures_defnoreturn" id="%`%BTg]-0f:qL#//5lSe" x="13" y="-63">
     <mutation>
       <arg name="x" varid="/Km8+Chs}2YesObTHYbl"></arg>
       <arg name="y" varid="S[4hE4@K!M:;HM0,EL:w"></arg>
     </mutation>
-    <field name="NAME">isEqual</field>
+    <field name="NAME">isEqualIgnoreCase</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
     <statement name="STACK">
-      <block type="variables_set" id="Y*2J:=]eS:cFU{)(~;fU">
-        <field name="VAR" id="[Y1iDPMal~evR-6QaNPE" variabletype="">occurrence</field>
-        <value name="VALUE">
-          <block type="text_indexOf" id="ry,I|QiG8oI+I;H^DDxv">
-            <field name="END">FIRST</field>
-            <value name="FIND">
-              <shadow type="text" id="X@{@2UGnhPs+:N.o[.gu">
-                <field name="TEXT"></field>
-              </shadow>
-            </value>
-          </block>
-        </value>
+      <block type="variables_set" id="=Nw3N9+!YHX{0r5;vVta">
+        <field name="VAR" id="/Km8+Chs}2YesObTHYbl" variabletype="">x</field>
         <next>
-          <block type="variables_set" id="~dFh#_~ZqAh70M}/S5M{">
-            <field name="VAR" id=",-6GMg3J=V,Hs7[i*}{}" variabletype="">isSameLength</field>
-            <value name="VALUE">
-              <block type="logic_compare" id="!5pimo-[aqcqwRNlI]SV">
-                <field name="OP">EQ</field>
-              </block>
-            </value>
+          <block type="variables_set" id="(-JhXs$^[iD2tfJ$?~Bo">
+            <field name="VAR" id="S[4hE4@K!M:;HM0,EL:w" variabletype="">y</field>
             <next>
-              <block type="controls_if" id="oqF`DRVHOaWGT-V`Fe(m">
+              <block type="controls_if" id="lc,{{TI#0r9;,**)c`L(">
                 <mutation else="1"></mutation>
                 <value name="IF0">
-                  <block type="logic_operation" id="XOym(PLX=[Q4)B2pW`VR">
-                    <field name="OP">AND</field>
+                  <block type="logic_compare" id="n/]kP$c?6~WDW~AUN9+A">
+                    <field name="OP">EQ</field>
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="text_print" id="6+j?0Tv=aKLkk,3YZw^?">
+                  <block type="text_print" id=",+0QUq%=)7+Nxzf7?_Yi">
                     <value name="TEXT">
-                      <shadow type="text" id="pSynqVCVvV7y)*TGi$v,">
+                      <shadow type="text" id="^/R$;09M8F4I}t6#!nVe">
                         <field name="TEXT"></field>
                       </shadow>
                     </value>
                   </block>
                 </statement>
                 <statement name="ELSE">
-                  <block type="text_print" id="/%iAVt(5M)e?TGa2mn4i">
+                  <block type="text_print" id="Vgul%NH0iYwavDU@Y5.J">
                     <value name="TEXT">
-                      <shadow type="text" id="e~iXl$H/uOpJ_K^_D%ZJ">
+                      <shadow type="text" id="`50`Y}njEqY*D@aMSP*a">
                         <field name="TEXT"></field>
                       </shadow>
                     </value>
@@ -75,7 +58,7 @@
         <field name="VAR" id="Q._ZYh2bgjS9(klX2j2V" variabletype="">text2</field>
         <next>
           <block type="procedures_callnoreturn" id="x;c!a(Tl;3RC-Pcc,/[j">
-            <mutation name="isEqual">
+            <mutation name="isEqualIgnoreCase">
               <arg name="x"></arg>
               <arg name="y"></arg>
             </mutation>
