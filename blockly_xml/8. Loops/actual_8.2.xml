@@ -1,0 +1,100 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="la(?UdvLC|%7I+BpiCWF">scanner</variable>
+    <variable type="" id="G*1mnYGo-+c3d6z;fBU[">purchases</variable>
+  </variables>
+  <block type="variables_set" id="XqF69/EF1:ak=+%s5kXE" x="113" y="38">
+    <field name="VAR" id="la(?UdvLC|%7I+BpiCWF" variabletype="">scanner</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id="PhVp)mjT1:2sqD%!R(?l">
+        <mutation type="TEXT"></mutation>
+        <field name="TYPE">TEXT</field>
+        <value name="TEXT">
+          <shadow type="text" id="ic$I2h^MymE}tFu:z.Er">
+            <field name="TEXT">Enter an item</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="~0dQ__u$+kc3C6uc/oS+">
+        <field name="VAR" id="G*1mnYGo-+c3d6z;fBU[" variabletype="">purchases</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id="-`8w`kz2tbURQKjv%X0e">
+            <mutation items="0"></mutation>
+          </block>
+        </value>
+        <next>
+          <block type="controls_whileUntil" id="XWLKj(rIyi$*)-kdsmee">
+            <field name="MODE">WHILE</field>
+            <value name="BOOL">
+              <block type="logic_compare" id="KuYWh+YbYuDL*8|~4vct">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="variables_get" id="H4gfv_hqfdzTpWO](Ol?">
+                    <field name="VAR" id="la(?UdvLC|%7I+BpiCWF" variabletype="">scanner</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="N.r})GGed|a@5R*bdL=Q">
+                    <field name="TEXT">done</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="lists_setIndex" id="}:Slf)V~:L/`z^:Kx|y|">
+                <mutation at="true"></mutation>
+                <field name="MODE">INSERT</field>
+                <field name="WHERE">FROM_START</field>
+                <value name="LIST">
+                  <block type="variables_get" id="nCs*sEmF2KBjvI[U7uz6">
+                    <field name="VAR" id="G*1mnYGo-+c3d6z;fBU[" variabletype="">purchases</field>
+                  </block>
+                </value>
+                <value name="AT">
+                  <block type="math_number" id="UyXw8sIQ-N0-%R7e42lG">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="variables_get" id="q73IG?rM-vigc:C=_0ta">
+                    <field name="VAR" id="la(?UdvLC|%7I+BpiCWF" variabletype="">scanner</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="A}}6d%Vwtd!Z3G8`nCmF">
+                    <field name="VAR" id="la(?UdvLC|%7I+BpiCWF" variabletype="">scanner</field>
+                    <value name="VALUE">
+                      <block type="text_prompt_ext" id="uPIu5[cNv(W?9vO7oopD">
+                        <mutation type="TEXT"></mutation>
+                        <field name="TYPE">TEXT</field>
+                        <value name="TEXT">
+                          <shadow type="text" id="(}5lu5{$uK-He4b|VZ~P">
+                            <field name="TEXT">Enter an item</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="text_print" id="D4.$@NYe,)0Dzu6HQ[R?">
+                <value name="TEXT">
+                  <shadow type="text" id="s/H.NGbC3D(x%it,izIJ">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="variables_get" id="jYbw}eJ^g]2]X9rgKIiq">
+                    <field name="VAR" id="G*1mnYGo-+c3d6z;fBU[" variabletype="">purchases</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
