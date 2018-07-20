@@ -1,106 +1,49 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
-    <variable type="" id="z[FSVk-0|Quc@0[m9.Bi">x</variable>
-    <variable type="" id="Zu1diEq[}O`g^8n7,LC*">original</variable>
-    <variable type="" id="Xhk6+{8-CNZukC*n~Jc]">counter</variable>
-    <variable type="" id="jjV/kK!v/VG`JajMsl3n">buffer</variable>
-    <variable type="" id="?75Y@Uv#mygRp*LFYfpB">i</variable>
+    <variable type="" id="k}OUAjJ[.;d_jNjt/U``">num1</variable>
+    <variable type="" id="p*2IN|}_8~-aP6QZYy{~">num2</variable>
+    <variable type="" id="]`YU6Mz!w##c_QJu9egE">result</variable>
   </variables>
-  <block type="procedures_defreturn" id="l}E)D`tq@X.#YJgacO;~" x="-12" y="-88">
+  <block type="procedures_defreturn" id="a6ks7Z,xjJT]CCxC++za" x="312" y="88">
     <mutation>
-      <arg name="x" varid="z[FSVk-0|Quc@0[m9.Bi"></arg>
+      <arg name="num1" varid="k}OUAjJ[.;d_jNjt/U``"></arg>
+      <arg name="num2" varid="p*2IN|}_8~-aP6QZYy{~"></arg>
     </mutation>
-    <field name="NAME">isPrime</field>
+    <field name="NAME">getMax</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
     <statement name="STACK">
-      <block type="variables_set" id="IKgXsuy,H0?KtkW6#O[@">
-        <field name="VAR" id="Xhk6+{8-CNZukC*n~Jc]" variabletype="">counter</field>
+      <block type="variables_set" id="GSmCiy_X2zSRd/B:cK6A">
+        <field name="VAR" id="]`YU6Mz!w##c_QJu9egE" variabletype="">result</field>
         <value name="VALUE">
-          <block type="math_number" id="RZ[8fcXNo:}`V6;RRSqF">
-            <field name="NUM">0</field>
+          <block type="variables_get" id="5A1~B3Rpoe?}v)1[?PPC">
+            <field name="VAR" id="k}OUAjJ[.;d_jNjt/U``" variabletype="">num1</field>
           </block>
         </value>
         <next>
-          <block type="controls_for" id=":vs~bu3LyP{Q|*cI!t9=">
-            <field name="VAR" id="?75Y@Uv#mygRp*LFYfpB" variabletype="">i</field>
-            <value name="FROM">
-              <shadow type="math_number" id="14Pg^r=U,,6iLFLH,-ZD">
-                <field name="NUM">2</field>
-              </shadow>
-            </value>
-            <value name="TO">
-              <shadow type="math_number" id="uqU{yD%Y@8AK|=d8a0-1">
-                <field name="NUM">10</field>
-              </shadow>
-              <block type="math_arithmetic" id="+3,CDQmh4slL4u;bTBmG">
-                <field name="OP">DIVIDE</field>
+          <block type="controls_if" id="9BnAt.q[d;zou{CCu/`S">
+            <value name="IF0">
+              <block type="logic_compare" id="I(nI9fNx|:;z343Yf`U[">
+                <field name="OP">GT</field>
                 <value name="A">
-                  <shadow type="math_number" id="#RBp_~9-{ZMt`--xZ5wI">
-                    <field name="NUM">1</field>
-                  </shadow>
-                  <block type="variables_get" id="ssOFceHv8qWkQk-rrQNn">
-                    <field name="VAR" id="z[FSVk-0|Quc@0[m9.Bi" variabletype="">x</field>
+                  <block type="variables_get" id="7_ktN@=Ij$}#RzO)(U-4">
+                    <field name="VAR" id="p*2IN|}_8~-aP6QZYy{~" variabletype="">num2</field>
                   </block>
                 </value>
                 <value name="B">
-                  <shadow type="math_number" id="6fY6z9I9B}-TE;[;FsZ*">
-                    <field name="NUM">2</field>
-                  </shadow>
+                  <block type="variables_get" id="%C3IX{|BoQV4ilt|:?o-">
+                    <field name="VAR" id="k}OUAjJ[.;d_jNjt/U``" variabletype="">num1</field>
+                  </block>
                 </value>
               </block>
             </value>
-            <value name="BY">
-              <shadow type="math_number" id="jhjtESTkN/~tmRbV{V3;">
-                <field name="NUM">1</field>
-              </shadow>
-            </value>
-            <statement name="DO">
-              <block type="controls_if" id="MNY?t3BhV`10]$:P~SLh">
-                <value name="IF0">
-                  <block type="logic_compare" id="/}@J:|Rj~4;R3pFI%`L8">
-                    <field name="OP">EQ</field>
-                    <value name="A">
-                      <block type="math_modulo" id="7@o{^4SO~%+P8WxT5%9p">
-                        <value name="DIVIDEND">
-                          <shadow type="math_number" id="U-9RtzZgOF-Tytd@za)P">
-                            <field name="NUM">64</field>
-                          </shadow>
-                          <block type="variables_get" id="S)Fn#Nkt@:s/|Y({OUQy">
-                            <field name="VAR" id="z[FSVk-0|Quc@0[m9.Bi" variabletype="">x</field>
-                          </block>
-                        </value>
-                        <value name="DIVISOR">
-                          <shadow type="math_number" id="(ZKrZ%%k}EK`yOx-KDeS">
-                            <field name="NUM">10</field>
-                          </shadow>
-                          <block type="variables_get" id="`.`J^]I-6rU)+y-i?+Ax">
-                            <field name="VAR" id="?75Y@Uv#mygRp*LFYfpB" variabletype="">i</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="math_number" id="[ny3GtM6JdIE~cFtH3D|">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
+            <statement name="DO0">
+              <block type="variables_set" id="GZrmU_V9@9~]8FO8|kAc">
+                <field name="VAR" id="]`YU6Mz!w##c_QJu9egE" variabletype="">result</field>
+                <value name="VALUE">
+                  <block type="variables_get" id=".%Uu(ArM,]v4y^l6fg:f">
+                    <field name="VAR" id="p*2IN|}_8~-aP6QZYy{~" variabletype="">num2</field>
                   </block>
                 </value>
-                <statement name="DO0">
-                  <block type="math_change" id="L`|KCt1[hoc{b5@P2;o;">
-                    <field name="VAR" id="Xhk6+{8-CNZukC*n~Jc]" variabletype="">counter</field>
-                    <value name="DELTA">
-                      <shadow type="math_number" id="0z:kI`RqF_6bb]R*RXi;">
-                        <field name="NUM">1</field>
-                      </shadow>
-                    </value>
-                    <next>
-                      <block type="controls_flow_statements" id="}t,B8p;m|Z;*Hd}mO,$A">
-                        <field name="FLOW">BREAK</field>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
               </block>
             </statement>
           </block>
@@ -108,78 +51,9 @@
       </block>
     </statement>
     <value name="RETURN">
-      <block type="variables_get" id="b+-TqV]z(v*rP9YN2,cn">
-        <field name="VAR" id="Xhk6+{8-CNZukC*n~Jc]" variabletype="">counter</field>
+      <block type="variables_get" id=")oEGzRGI^j^F3^y(eav{">
+        <field name="VAR" id="]`YU6Mz!w##c_QJu9egE" variabletype="">result</field>
       </block>
     </value>
-  </block>
-  <block type="variables_set" id=",Y[}Wc6oT*rT1T(R;cos" x="-12" y="188">
-    <field name="VAR" id="Zu1diEq[}O`g^8n7,LC*" variabletype="">original</field>
-    <value name="VALUE">
-      <block type="text_prompt_ext" id="1@7qZ,(L2mb$kHxD+s^D">
-        <mutation type="NUMBER"></mutation>
-        <field name="TYPE">NUMBER</field>
-        <value name="TEXT">
-          <shadow type="text" id="t]U17)WDgGqzyiJ2}Alg">
-            <field name="TEXT">enter a number</field>
-          </shadow>
-        </value>
-      </block>
-    </value>
-    <next>
-      <block type="variables_set" id="]`%Z1y`M!Z*8W?D7!{DI">
-        <field name="VAR" id="jjV/kK!v/VG`JajMsl3n" variabletype="">buffer</field>
-        <value name="VALUE">
-          <block type="procedures_callreturn" id="n~T`]w`K}=4I).|@4]|G">
-            <mutation name="isPrime">
-              <arg name="x"></arg>
-            </mutation>
-            <value name="ARG0">
-              <block type="variables_get" id="k*GZJWg!CLJGwh;#!muU">
-                <field name="VAR" id="Zu1diEq[}O`g^8n7,LC*" variabletype="">original</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <next>
-          <block type="controls_if" id="mp|?@z35xKf|GyCEi,]X">
-            <mutation else="1"></mutation>
-            <value name="IF0">
-              <block type="logic_compare" id="MyPg8m[5AMqn@/ihCBFp">
-                <field name="OP">GT</field>
-                <value name="A">
-                  <block type="variables_get" id="M)nL/;FG2dO9^U~w]sM*">
-                    <field name="VAR" id="jjV/kK!v/VG`JajMsl3n" variabletype="">buffer</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="{M$E|ln`fvtr?zT/vj!:">
-                    <field name="NUM">0</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <statement name="DO0">
-              <block type="text_print" id="9eH!feX.`*CZ:DWF*gA.">
-                <value name="TEXT">
-                  <shadow type="text" id="C01KKHfr4Ds;-GTJ99ap">
-                    <field name="TEXT">The number is not a prime</field>
-                  </shadow>
-                </value>
-              </block>
-            </statement>
-            <statement name="ELSE">
-              <block type="text_print" id="`ikjt?;f#WMqI(dJ2O]^">
-                <value name="TEXT">
-                  <shadow type="text" id="g$/,|ry5k6e]?koD}y2I">
-                    <field name="TEXT">The number is a prime</field>
-                  </shadow>
-                </value>
-              </block>
-            </statement>
-          </block>
-        </next>
-      </block>
-    </next>
   </block>
 </xml>
