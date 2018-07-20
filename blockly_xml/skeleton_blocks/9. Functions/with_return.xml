@@ -1,14 +1,7 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <variables>
-    <variable type="" id="k}OUAjJ[.;d_jNjt/U``">num1</variable>
-    <variable type="" id="p*2IN|}_8~-aP6QZYy{~">num2</variable>
-  </variables>
-  <block type="procedures_defreturn" id="a6ks7Z,xjJT]CCxC++za" x="312" y="88">
-    <mutation>
-      <arg name="num1" varid="k}OUAjJ[.;d_jNjt/U``"></arg>
-      <arg name="num2" varid="p*2IN|}_8~-aP6QZYy{~"></arg>
-    </mutation>
-    <field name="NAME">getMax</field>
+  <variables></variables>
+  <block type="procedures_defreturn" id="km6f]j8$RMVa^uxm,!}H" x="113" y="63">
+    <field name="NAME">convertMinutes</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
   </block>
 </xml>
