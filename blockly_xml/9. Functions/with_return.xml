@@ -1,58 +1,29 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
-    <variable type="" id="k}OUAjJ[.;d_jNjt/U``">num1</variable>
-    <variable type="" id="p*2IN|}_8~-aP6QZYy{~">num2</variable>
-    <variable type="" id="]`YU6Mz!w##c_QJu9egE">result</variable>
+    <variable type="" id="YLJz)h]nl5[Q~|D2HGY!">minutes</variable>
   </variables>
-  <block type="procedures_defreturn" id="a6ks7Z,xjJT]CCxC++za" x="312" y="88">
+  <block type="procedures_defreturn" id="km6f]j8$RMVa^uxm,!}H" x="163" y="113">
     <mutation>
-      <arg name="num1" varid="k}OUAjJ[.;d_jNjt/U``"></arg>
-      <arg name="num2" varid="p*2IN|}_8~-aP6QZYy{~"></arg>
+      <arg name="minutes" varid="YLJz)h]nl5[Q~|D2HGY!"></arg>
     </mutation>
-    <field name="NAME">getMax</field>
+    <field name="NAME">convertMinutes</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
-    <statement name="STACK">
-      <block type="variables_set" id="GSmCiy_X2zSRd/B:cK6A">
-        <field name="VAR" id="]`YU6Mz!w##c_QJu9egE" variabletype="">result</field>
-        <value name="VALUE">
-          <block type="variables_get" id="5A1~B3Rpoe?}v)1[?PPC">
-            <field name="VAR" id="k}OUAjJ[.;d_jNjt/U``" variabletype="">num1</field>
+    <value name="RETURN">
+      <block type="math_arithmetic" id="A(/G][WijS?oc4gGz~LZ">
+        <field name="OP">DIVIDE</field>
+        <value name="A">
+          <shadow type="math_number" id="_K:F#3w.:`?|#G/rtDt1">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="variables_get" id="_$Uthn|H|JyG9XK`*5ai">
+            <field name="VAR" id="YLJz)h]nl5[Q~|D2HGY!" variabletype="">minutes</field>
           </block>
         </value>
-        <next>
-          <block type="controls_if" id="9BnAt.q[d;zou{CCu/`S">
-            <value name="IF0">
-              <block type="logic_compare" id="I(nI9fNx|:;z343Yf`U[">
-                <field name="OP">GT</field>
-                <value name="A">
-                  <block type="variables_get" id="7_ktN@=Ij$}#RzO)(U-4">
-                    <field name="VAR" id="p*2IN|}_8~-aP6QZYy{~" variabletype="">num2</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="variables_get" id="%C3IX{|BoQV4ilt|:?o-">
-                    <field name="VAR" id="k}OUAjJ[.;d_jNjt/U``" variabletype="">num1</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <statement name="DO0">
-              <block type="variables_set" id="GZrmU_V9@9~]8FO8|kAc">
-                <field name="VAR" id="]`YU6Mz!w##c_QJu9egE" variabletype="">result</field>
-                <value name="VALUE">
-                  <block type="variables_get" id=".%Uu(ArM,]v4y^l6fg:f">
-                    <field name="VAR" id="p*2IN|}_8~-aP6QZYy{~" variabletype="">num2</field>
-                  </block>
-                </value>
-              </block>
-            </statement>
-          </block>
-        </next>
-      </block>
-    </statement>
-    <value name="RETURN">
-      <block type="variables_get" id=")oEGzRGI^j^F3^y(eav{">
-        <field name="VAR" id="]`YU6Mz!w##c_QJu9egE" variabletype="">result</field>
+        <value name="B">
+          <shadow type="math_number" id="P;Q_YS:HErN09B8C;_Z;">
+            <field name="NUM">60</field>
+          </shadow>
+        </value>
       </block>
     </value>
   </block>
