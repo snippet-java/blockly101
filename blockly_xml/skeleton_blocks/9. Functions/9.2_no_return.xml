@@ -1,0 +1,42 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="lP]sTQ5]|N6)ML0k=CU4">x</variable>
+    <variable type="" id="8dmYxX*,Jo2Ac{(IJ~S*">y</variable>
+    <variable type="" id="LbHVVb1CKp6R@Md*OZt?">num1</variable>
+    <variable type="" id="dFdtn#!}s6mVdJ~l)I-%">num2</variable>
+  </variables>
+  <block type="procedures_defnoreturn" id="Y0k{sdgXH|y-/.[QYf@}" x="38" y="-63">
+    <mutation>
+      <arg name="x" varid="lP]sTQ5]|N6)ML0k=CU4"></arg>
+      <arg name="y" varid="8dmYxX*,Jo2Ac{(IJ~S*"></arg>
+    </mutation>
+    <field name="NAME">do something</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+  </block>
+  <block type="variables_set" id="5UBY+$4N|E6FgaJHGh)d" x="37" y="62">
+    <field name="VAR" id="LbHVVb1CKp6R@Md*OZt?" variabletype="">num1</field>
+    <value name="VALUE">
+      <block type="math_number" id="O#oUg#h);$/jFl}kJy.[">
+        <field name="NUM">4.4</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="w4JB4%BB^jUbp(B~,VLc">
+        <field name="VAR" id="dFdtn#!}s6mVdJ~l)I-%" variabletype="">num2</field>
+        <value name="VALUE">
+          <block type="math_number" id="Mc1L$ant}?WyPX;8xHXJ">
+            <field name="NUM">4.6</field>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="zY/CHJc;Ol^Zi#t9M3t4">
+            <mutation name="do something">
+              <arg name="x"></arg>
+              <arg name="y"></arg>
+            </mutation>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
