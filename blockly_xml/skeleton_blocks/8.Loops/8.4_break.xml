@@ -1,0 +1,31 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="!T;`#@]Z#pbO$R,qXn4f">i</variable>
+  </variables>
+  <block type="controls_forEach" id="MUb7VF89my2wAF.o]j+l" x="313" y="63">
+    <field name="VAR" id="!T;`#@]Z#pbO$R,qXn4f" variabletype="">i</field>
+    <value name="LIST">
+      <block type="lists_create_with" id="m7pS.1q;57af#Z5su{~F">
+        <mutation items="3"></mutation>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="fy-^Hy_Nx)T+TMkD2)^T">
+        <value name="IF0">
+          <block type="logic_compare" id="xaKy^*y@PE?[l;AjJb`g">
+            <field name="OP">EQ</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="text_print" id="`{NP/`yF3RFZ6,#=P[eB">
+            <value name="TEXT">
+              <shadow type="text" id="()6)G,[h-u=!@!iEguV@">
+                <field name="TEXT"></field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
