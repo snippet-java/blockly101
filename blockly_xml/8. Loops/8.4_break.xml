@@ -1,0 +1,88 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="!T;`#@]Z#pbO$R,qXn4f">i</variable>
+  </variables>
+  <block type="controls_forEach" id="MUb7VF89my2wAF.o]j+l" x="312" y="-38">
+    <field name="VAR" id="!T;`#@]Z#pbO$R,qXn4f" variabletype="">i</field>
+    <value name="LIST">
+      <block type="lists_create_with" id="R.HZJFFy=gbb.geGjccy">
+        <mutation items="6"></mutation>
+        <value name="ADD0">
+          <block type="text" id="syjo0`(nQMV4EuxbEkaG">
+            <field name="TEXT">bread</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="Fdz?ynm,4p6SciTQ28c!">
+            <field name="TEXT">apples</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="!ry@;WAF5=6~g.,4j-GT">
+            <field name="TEXT">milk</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="zTyr|9V$y+nTQr)mNSH^">
+            <field name="TEXT">bananas</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="cJ[aWz0~8*5{T[)7y7}}">
+            <field name="TEXT">oranges</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="mVk3bJE|Es5XSRuu.LuA">
+            <field name="TEXT">strawberries</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="text_print" id="+13Fm1C0fGT+LeVDCrau">
+        <value name="TEXT">
+          <shadow type="text" id="@oTx[GpQI?frq5rP3+4U">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="variables_get" id="_AA}1[-?w_2R^}-,P0!v">
+            <field name="VAR" id="!T;`#@]Z#pbO$R,qXn4f" variabletype="">i</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="fy-^Hy_Nx)T+TMkD2)^T">
+            <value name="IF0">
+              <block type="logic_compare" id="xaKy^*y@PE?[l;AjJb`g">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="[lNq!didFO{|2Y}ZK0-S">
+                    <field name="VAR" id="!T;`#@]Z#pbO$R,qXn4f" variabletype="">i</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="6hrrG%oVh4.77fw(1DE:">
+                    <field name="TEXT">milk</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="text_print" id="`{NP/`yF3RFZ6,#=P[eB">
+                <value name="TEXT">
+                  <shadow type="text" id="()6)G,[h-u=!@!iEguV@">
+                    <field name="TEXT">We remembered to get the milk!</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="controls_flow_statements" id="g91vD@$L2W0)UK~Geu5t">
+                    <field name="FLOW">BREAK</field>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
