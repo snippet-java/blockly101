@@ -1,0 +1,86 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="-0$z:)sgA]BI^WNr3#T^">i</variable>
+  </variables>
+  <block type="controls_forEach" id="/g#{wa7%~vyg=bW4#3_A" x="112" y="-13">
+    <field name="VAR" id="-0$z:)sgA]BI^WNr3#T^" variabletype="">i</field>
+    <value name="LIST">
+      <block type="lists_create_with" id="mW..ZV5LZ6|}2A-u)Bff">
+        <mutation items="5"></mutation>
+        <value name="ADD0">
+          <block type="math_number" id="zaN/nr3#Qg-:wra}]PCM">
+            <field name="NUM">-2</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="math_number" id="z+LIE75?kbQck==-Ii^d">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="math_number" id="K9qxH#bsVaeB[rbxwQ@p">
+            <field name="NUM">3</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="math_number" id="cpdtSl/n@D56}`+?DwDH">
+            <field name="NUM">4</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="math_number" id="Sxo@~G6!!w$kbe.^T=Jh">
+            <field name="NUM">5</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="(Pjcjd)m+%2vRW!tUY!:">
+        <value name="IF0">
+          <block type="logic_compare" id="485d6AKTR[10YR]q2p?c">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="math_modulo" id="t~GcmqC4Q(w0vm7nMg1+">
+                <value name="DIVIDEND">
+                  <shadow type="math_number" id="p_;LE*]Zu?,[BJ+o+.ww">
+                    <field name="NUM">64</field>
+                  </shadow>
+                  <block type="variables_get" id="Ry%DKZ$f7eWa/.a8m.75">
+                    <field name="VAR" id="-0$z:)sgA]BI^WNr3#T^" variabletype="">i</field>
+                  </block>
+                </value>
+                <value name="DIVISOR">
+                  <shadow type="math_number" id="Mm:FgR2@b=OPg!:!pmik">
+                    <field name="NUM">2</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="*4ZLa_=%Gcxy]yy/-!nA">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_flow_statements" id="2rmC2!6n[2.[KLAX5_A~">
+            <field name="FLOW">CONTINUE</field>
+          </block>
+        </statement>
+        <next>
+          <block type="text_print" id="nO%nKsMUANBBr5VU@B*]">
+            <value name="TEXT">
+              <shadow type="text" id="xBj7#1A~e]I[iL7Ze]II">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="variables_get" id=".X]XP{~Uy9iJESbqH7i?">
+                <field name="VAR" id="-0$z:)sgA]BI^WNr3#T^" variabletype="">i</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
