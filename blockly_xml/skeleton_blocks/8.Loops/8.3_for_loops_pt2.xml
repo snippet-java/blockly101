@@ -1,59 +1,42 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
-    <variable type="" id="IUGBvn$EINWL.uM:M?t9">counter</variable>
-    <variable type="" id="nhOgt,;uFh@9llmu#xkc">myList</variable>
-    <variable type="" id="X)5c|~l=876G9WKavmtx">i</variable>
+    <variable type="" id="abNz9ERJ~~l,+{,|.p:{">names</variable>
+    <variable type="" id="Dj{SrABs]TE:kgI?@kzi">i</variable>
   </variables>
-  <block type="variables_set" id="Zs|Mq7g-RSri,]SyXm%F" x="-137" y="-63">
-    <field name="VAR" id="IUGBvn$EINWL.uM:M?t9" variabletype="">counter</field>
+  <block type="variables_set" id="NXIxs~%iB?hHj7zFm+{f" x="87" y="-87">
+    <field name="VAR" id="abNz9ERJ~~l,+{,|.p:{" variabletype="">names</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="~1jN]iL!ZBv*=+cUEGF`">
+        <mutation items="6"></mutation>
+      </block>
+    </value>
     <next>
-      <block type="variables_set" id="3!c24+*Jp/.psW!@/rUI">
-        <field name="VAR" id="nhOgt,;uFh@9llmu#xkc" variabletype="">myList</field>
-        <value name="VALUE">
-          <block type="lists_create_with" id="A/~5j=fx1m#[W|a*Y1Q+">
-            <mutation items="6"></mutation>
-          </block>
+      <block type="controls_for" id="$Uz^*0o0}Z((A+_SKRf.">
+        <field name="VAR" id="Dj{SrABs]TE:kgI?@kzi" variabletype="">i</field>
+        <value name="FROM">
+          <shadow type="math_number" id="L~!Z_h.,_08*aa$8-Abi">
+            <field name="NUM">1</field>
+          </shadow>
         </value>
-        <next>
-          <block type="controls_for" id="YrKs1r^Xqh;L*YxTIpm9">
-            <field name="VAR" id="X)5c|~l=876G9WKavmtx" variabletype="">i</field>
-            <value name="FROM">
-              <shadow type="math_number" id="ifyw_mm1!RVz]:%`25qu">
-                <field name="NUM">1</field>
+        <value name="TO">
+          <shadow type="math_number" id="rX5q5ZXK*Eqd-G2`(LG[">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+        <value name="BY">
+          <shadow type="math_number" id="$~erLk.2W?iSi{BCT*3i">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="text_print" id="E.OwT{QS+TH33$O0Cxv9">
+            <value name="TEXT">
+              <shadow type="text" id="H(+:_)N42F^Eek@GE]b/">
+                <field name="TEXT"></field>
               </shadow>
             </value>
-            <value name="TO">
-              <shadow type="math_number" id="MeR}{^XMOW*j|T776)(@">
-                <field name="NUM">10</field>
-              </shadow>
-            </value>
-            <value name="BY">
-              <shadow type="math_number" id="pUWsIkyv2G`GQ,0^.R%Y">
-                <field name="NUM">1</field>
-              </shadow>
-            </value>
-            <statement name="DO">
-              <block type="controls_if" id="|5]LNk[+E@jPm:7^UDzE">
-                <value name="IF0">
-                  <block type="math_number_property" id="]GT{t*/uhdrwXekz0d2o">
-                    <mutation divisor_input="false"></mutation>
-                    <field name="PROPERTY">EVEN</field>
-                    <value name="NUMBER_TO_CHECK">
-                      <shadow type="math_number" id="T^u8Y,VZBM2$ihN;s[W6">
-                        <field name="NUM">0</field>
-                      </shadow>
-                      <block type="lists_getIndex" id="8`$9dxG.Nb4,~(8u:_5r">
-                        <mutation statement="false" at="true"></mutation>
-                        <field name="MODE">GET</field>
-                        <field name="WHERE">FROM_START</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </statement>
           </block>
-        </next>
+        </statement>
       </block>
     </next>
   </block>
