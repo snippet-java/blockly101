@@ -1,8 +1,9 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
     <variable type="" id="YLJz)h]nl5[Q~|D2HGY!">minutes</variable>
+    <variable type="" id="}{bIy#e%ab3Gl8P:7T{v">input</variable>
   </variables>
-  <block type="procedures_defreturn" id="km6f]j8$RMVa^uxm,!}H" x="163" y="113">
+  <block type="procedures_defreturn" id="km6f]j8$RMVa^uxm,!}H" x="163" y="62">
     <mutation>
       <arg name="minutes" varid="YLJz)h]nl5[Q~|D2HGY!"></arg>
     </mutation>
@@ -26,5 +27,38 @@
         </value>
       </block>
     </value>
+  </block>
+  <block type="variables_set" id="F5[goyU7uCu0TF){to:7" x="163" y="162">
+    <field name="VAR" id="}{bIy#e%ab3Gl8P:7T{v" variabletype="">input</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id="J.x]T5WTg@HGh1U?UfGZ">
+        <mutation type="NUMBER"></mutation>
+        <field name="TYPE">NUMBER</field>
+        <value name="TEXT">
+          <shadow type="text" id="G0A7tB)wgkN5rBr6rA?|">
+            <field name="TEXT">Enter the number of minutes</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="xW!vZ/cv9%Vr#phNeBKM">
+        <value name="TEXT">
+          <shadow type="text" id="ryJ;rOOFb;wx|HeA:tUx">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="procedures_callreturn" id="(a2iX{EZEZ49Nl4+=dxQ">
+            <mutation name="convertMinutes">
+              <arg name="minutes"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="variables_get" id="WuL3c;x+SSxdA(E3,(Rp">
+                <field name="VAR" id="}{bIy#e%ab3Gl8P:7T{v" variabletype="">input</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
   </block>
 </xml>
