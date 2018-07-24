@@ -1,7 +1,15 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <variables></variables>
-  <block type="procedures_defreturn" id="km6f]j8$RMVa^uxm,!}H" x="113" y="63">
+  <variables>
+    <variable type="" id="?=?q_F#1`T+t]qPEo~nE">input</variable>
+  </variables>
+  <block type="procedures_defreturn" id="km6f]j8$RMVa^uxm,!}H" x="62" y="-13">
     <field name="NAME">convertMinutes</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
+  </block>
+  <block type="variables_set" id="YZOx$+JuSp#2%hNTy=5j" x="63" y="112">
+    <field name="VAR" id="?=?q_F#1`T+t]qPEo~nE" variabletype="">input</field>
+  </block>
+  <block type="procedures_callreturn" id="]am|*nFnZ|R_6]^B3-Sz" x="113" y="163">
+    <mutation name="convertMinutes"></mutation>
   </block>
 </xml>
